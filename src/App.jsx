@@ -1,9 +1,9 @@
 import { useContext, useEffect, useRef } from "react";
 import { Auth, API } from "aws-amplify";
-import Context from "./Context/Context";
+import Context from "./Context/Context.jsx.old";
 import RoutesContainer from "./routes";
 import LoaderProvider from "./components/LoaderProvider";
-import InstitutionContext from "./Context/InstitutionContext";
+import InstitutionContext from "./Context/InstitutionContext.jsx.old";
 import apiPaths from "./utils/api-paths";
 
 function App() {

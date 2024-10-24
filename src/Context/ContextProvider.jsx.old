@@ -1,6 +1,6 @@
 import { API } from 'aws-amplify'
 import React, { useState, useMemo, useEffect } from 'react'
-import Context from './Context';
+import Context from './Context.jsx.old';
 import web from '../utils/data.json';
 import apiPaths from '../utils/api-paths';
 

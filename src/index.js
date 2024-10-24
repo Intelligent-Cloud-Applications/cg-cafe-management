@@ -15,9 +15,10 @@ import "./index.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Flowbite } from "flowbite-react";
+import { Provider } from "./Context";
 
 // Code
-// Amplify.configure(config);
+Amplify.configure(config);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -26,6 +27,7 @@ root.render(
     {/*<Provider store={store}>*/}
     {/*<ContextProvider>*/}
     {/*  <InstitutionContextProvider>*/}
+    <Provider>
         <Flowbite>
           <App />
           <ToastContainer
@@ -42,6 +44,7 @@ root.render(
             bodyClassName="toastBody"
           />
         </Flowbite>
+    </Provider>
     {/*  </InstitutionContextProvider>*/}
     {/*</ContextProvider>*/}
     {/*</Provider>*/}
